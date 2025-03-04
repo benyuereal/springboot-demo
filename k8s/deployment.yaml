@@ -16,7 +16,7 @@ spec:
         - name: springboot-app
           image: springboot-demo:1.0.0   # 本地构建的镜像名称
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "prod"

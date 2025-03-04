@@ -6,7 +6,7 @@ spec:
   type: NodePort
   ports:
     - port: 8080
-      targetPort: 8080
+      targetPort: 8082
       nodePort: 30008   # NodePort 范围 30000-32767
   selector:
     app: springboot-demo
