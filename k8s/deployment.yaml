@@ -15,6 +15,7 @@ spec:
       containers:
         - name: springboot-app
           image: springboot-demo:1.0.0   # 本地构建的镜像名称
+          imagePullPolicy: Never  # 关键配置
           ports:
             - containerPort: 8082
           env:
