@@ -1,7 +1,5 @@
 # 阶段 1：使用 Maven 构建 JAR
-# 原行：FROM maven:3.8.4-openjdk-17 AS build
-# 替换为：
-FROM registry.cn-hangzhou.aliyuncs.com/library/maven:3.8.4-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-17 AS build
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
